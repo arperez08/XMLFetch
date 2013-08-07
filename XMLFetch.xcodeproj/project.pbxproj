@@ -18,6 +18,9 @@
 		144A4C6317B220BB00FEF913 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144A4C6217B220BB00FEF913 /* Default-568h@2x.png */; };
 		144A4C6617B220BB00FEF913 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A4C6517B220BB00FEF913 /* ViewController.m */; };
 		144A4C6917B220BB00FEF913 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144A4C6717B220BB00FEF913 /* ViewController.xib */; };
+		144A4C7217B220E100FEF913 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A4C7117B220E100FEF913 /* GDataXMLNode.m */; };
+		144A4C7617B2351E00FEF913 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A4C7517B2351E00FEF913 /* MyAnnotation.m */; };
+		144A4C7917B23A4100FEF913 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144A4C7717B23A3400FEF913 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		144A4C6417B220BB00FEF913 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		144A4C6517B220BB00FEF913 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		144A4C6817B220BB00FEF913 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		144A4C7017B220E100FEF913 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		144A4C7117B220E100FEF913 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		144A4C7417B2351E00FEF913 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		144A4C7517B2351E00FEF913 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		144A4C7717B23A3400FEF913 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144A4C7917B23A4100FEF913 /* MapKit.framework in Frameworks */,
 				144A4C4D17B220BB00FEF913 /* UIKit.framework in Frameworks */,
 				144A4C4F17B220BB00FEF913 /* Foundation.framework in Frameworks */,
 				144A4C5117B220BB00FEF913 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,7 @@
 		144A4C4B17B220BB00FEF913 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				144A4C7717B23A3400FEF913 /* MapKit.framework */,
 				144A4C4C17B220BB00FEF913 /* UIKit.framework */,
 				144A4C4E17B220BB00FEF913 /* Foundation.framework */,
 				144A4C5017B220BB00FEF913 /* CoreGraphics.framework */,
@@ -83,6 +93,8 @@
 		144A4C5217B220BB00FEF913 /* XMLFetch */ = {
 			isa = PBXGroup;
 			children = (
+				144A4C7317B2351E00FEF913 /* MapAnnotation */,
+				144A4C6F17B220E100FEF913 /* GDataXML */,
 				144A4C5B17B220BB00FEF913 /* AppDelegate.h */,
 				144A4C5C17B220BB00FEF913 /* AppDelegate.m */,
 				144A4C6417B220BB00FEF913 /* ViewController.h */,
@@ -105,6 +117,24 @@
 				144A4C6217B220BB00FEF913 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		144A4C6F17B220E100FEF913 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				144A4C7017B220E100FEF913 /* GDataXMLNode.h */,
+				144A4C7117B220E100FEF913 /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		144A4C7317B2351E00FEF913 /* MapAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				144A4C7417B2351E00FEF913 /* MyAnnotation.h */,
+				144A4C7517B2351E00FEF913 /* MyAnnotation.m */,
+			);
+			path = MapAnnotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +206,8 @@
 				144A4C5917B220BB00FEF913 /* main.m in Sources */,
 				144A4C5D17B220BB00FEF913 /* AppDelegate.m in Sources */,
 				144A4C6617B220BB00FEF913 /* ViewController.m in Sources */,
+				144A4C7217B220E100FEF913 /* GDataXMLNode.m in Sources */,
+				144A4C7617B2351E00FEF913 /* MyAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +292,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XMLFetch/XMLFetch-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "XMLFetch/XMLFetch-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,7 +305,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XMLFetch/XMLFetch-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "XMLFetch/XMLFetch-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

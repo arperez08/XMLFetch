@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate>
+{
+    IBOutlet UILabel *lblName;
+    IBOutlet UILabel *lblCategory;
+    IBOutlet UILabel *lblRating;
+    IBOutlet UILabel *lblPhone;
+    IBOutlet UILabel *lblAddress;
+    IBOutlet UILabel *lblCity;
+    IBOutlet UILabel *lblZip;
+    IBOutlet UILabel *lblLad;
+    IBOutlet UILabel *lblLong;
+    IBOutlet UILabel *lblState;
+    
+    IBOutlet MKMapView* mapView;
+}
+
+@property(nonatomic,retain)	IBOutlet MKMapView* mapView;
 
 @end
